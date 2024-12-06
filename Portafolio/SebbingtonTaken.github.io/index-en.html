@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Chinchilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/slide.css" rel="stylesheet">
+    <link href="./css/animation.css" rel="stylesheet">
+    <script src="./js/displayProyectos-en.js"></script>
+    <link href="./css/lottie.css" rel="stylesheet">
+</head>
+<body>
+    <div id="overlay" class="hidden">
+        <img id="webpAnimation" src="./gif/03-42-05-37_512.webp" alt="Animation">
+    </div>
+    <nav>
+        <div class="navPrincipal">
+            <a href="#seccionIntroduccion">
+                <img id="logoPrincipal" src="./img/Logo.png">
+            </a>
+            
+            <a href="#seccionProyectos"> Projects </a>
+            <a  id="downloadLink"  href="./pdf/Sebastian Chinchilla CV - EN.pdf" download="Sebastian Chinchilla CV - EN.pdf">CV</a>
+            <a href="./contacto-en.html"> Contact </a>
+        </div>
+
+    </nav>
+
+    <nav id="idioma" class="navIdioma">
+        <a href="index-en.html">
+            EN
+        </a>
+        <a href="index.html">
+            ES
+        </a>
+    </nav>
+
+    <section id="seccionIntroduccion">
+  
+        <img id="imgIntroduccion" src="img/Logo_white.png">
+        <div class="acercaDeMi">
+            <h2 class="tituloAcercaDeMi"> About me </h2>
+
+            <div class="textBox">
+                <p>
+                    "Hello! I am a backend web application programmer, with experience in ASP.NET, Node.js, Python, Java, and relational and non-relational databases. I am driven by creativity and doing a good job!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccionProyectos">
+        <h1 class="titleProyectos"> Projects</h1>
+
+        <p> Section displaying university projects I have worked in, click on an image to learn more about each project!</p>
+        <div class="slide-container">
+
+            <span class="slider-span" id="slider-span1"></span>
+            <span class="slider-span" id="slider-span2"></span>
+            <span class="slider-span" id="slider-span3"></span>
+            <span class="slider-span" id="slider-span4"></span>
+ 
+            <div class="image-slider">
+        
+                <div class="slides-div" id="slide-1">
+                    <img src="./img/Proyecto2.png" alt="" class="slideImg" id="img1">
+                    <a href="#slider-span1" class="button" id="button-1" onclick="showText(1, event)"></a>
+                </div>
+        
+                <div class="slides-div" id="slide-2">
+                    <img src="./img/PokedexRandomizer.png" alt="" class="slideImg" id="img2">
+                    <a href="#slider-span2" class="button" id="button-2" onclick="showText(2, event)"></a>
+                </div>
+        
+                <div class="slides-div" id="slide-3">
+                    <img src="./img/ProyectoNomina.png" alt="" class="slideImg" id="img3">
+                    <a href="#slider-span3" class="button" id="button-3" onclick="showText(3, event)"></a>
+                </div>
+        
+                <div class="slides-div" id="slide-4">
+                    <img src="./img/Cenfomon.png" alt="" class="slideImg" id="img4">
+                 
+                    <a href="#slider-span4" class="button" id="button-4" onclick="showText(4, event)"></a>
+                </div>
+               
+            </div>
+
+
+       
+
+        </div>
+
+        <div class="text-display" id="text-display"></div>
+        <div id="link-button-container"></div>
+        
+        <button id="scrollTopButton">↑</button>     
+    </section>
+
+
+    <script src="./js/lottie-en.js"></script>
+</body>
+</html>
